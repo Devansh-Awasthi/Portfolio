@@ -1,5 +1,6 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/ui/Header";
 
 const JetBrainsMono = JetBrains_Mono({
   weights:["100","200","300","400","500","600","700","800","900"],
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${JetBrainsMono.variable}`}
       >
+        <Header></Header> 
         {children}
       </body>
     </html>
